@@ -12,8 +12,12 @@
 --------------------------------------------------------------*/
 
 :root {
-    --color: #344E41;
+    --darkestcolor: #11281c;
+    --darkcolor: #1b3f2d;
+    --lightcolor: #a3b18a;
+    --color: #3a5a40;
     --hover-color: #588157;
+    --page: #dad7cd;
 }
 
 body {
@@ -22,7 +26,7 @@ body {
 }
 
 a {
-    color: var(--color);
+    color: var(--lightcolor);
     text-decoration: none;
 }
 
@@ -90,7 +94,8 @@ h6 {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #040b14;
+    background: var(--darkestcolor);
+    /*#040b14;*/
     overflow-y: auto;
 }
 
@@ -98,7 +103,8 @@ h6 {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #2c2f3f;
+    border: 4px solid var(--darkcolor);
+    /*#2c2f3f;*/
 }
 
 #header .profile h1 {
@@ -120,8 +126,10 @@ h6 {
 #header .profile .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #212431;
-    color: #fff;
+    background: var(--darkcolor);
+    /*#212431;*/
+    color: var(--lightcolor);
+    /* #fff;*/
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -189,7 +197,8 @@ h6 {
 .nav-menu a:focus {
     display: flex;
     align-items: center;
-    color: #a8a9b4;
+    color: var(--lightcolor);
+    /* #a8a9b4;*/
     padding: 12px 15px;
     margin-bottom: 8px;
     transition: 0.3s;
@@ -200,7 +209,8 @@ h6 {
 .nav-menu a:focus i {
     font-size: 24px;
     padding-right: 8px;
-    color: #6f7180;
+    color: var(--lightcolor);
+    /*#6f7180;*/
 }
 
 .nav-menu a:hover,
@@ -264,7 +274,7 @@ h6 {
 
 #hero:before {
     content: "";
-    background: rgba(5, 13, 24, 0.3);
+    background: rgba(5, 13, 24, 0.6);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -288,14 +298,16 @@ h6 {
 }
 
 #hero p {
-    color: #fff;
+    color: var(--lightcolor);
+    /*#fff;*/
     margin-bottom: 50px;
     font-size: 26px;
     font-family: "Poppins", sans-serif;
 }
 
 #hero p span {
-    color: #fff;
+    color: var(--lightcolor);
+    /*#fff;*/
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid var(--color);
@@ -330,7 +342,7 @@ section {
 }
 
 .section-bg {
-    background: #f5f8fd;
+    background: #f4f6ed;
 }
 
 .section-title {
@@ -343,7 +355,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #6a0875;
+    color: var(--darkcolor);
 }
 
 .section-title h2::after {
@@ -369,7 +381,7 @@ section {
 .about .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #6a0875;
+    color: var(--darkcolor);
 }
 
 .about .content ul {
@@ -434,14 +446,14 @@ section {
     margin: 0 0 0 60px;
     font-family: "Raleway", sans-serif;
     font-size: 14px;
-    color: #6a0875;
+    color: var(--darkcolor);
 }
 
 .facts .count-box a {
     font-weight: 600;
     display: block;
     margin-top: 20px;
-    color: #6a0875;
+    color: var(--darkcolor);
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     transition: ease-in-out 0.3s;
@@ -506,7 +518,7 @@ section {
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #6a0875;
+    border-left: 2px solid var(--darkcolor);
     position: relative;
 }
 
@@ -550,7 +562,7 @@ section {
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #6a0875;
+    border: 2px solid var(--darkcolor);
 }
 
 
@@ -916,7 +928,7 @@ section {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #6a0875;
+    color: var(--darkcolor);
 }
 
 .contact .info .email p {
@@ -1120,7 +1132,7 @@ section {
     bottom: 0;
     width: 300px;
     z-index: 9999;
-    background: #040b14;
+    background: var(--darkestcolor)/*#040b14;*/
 }
 
 #footer .copyright {
